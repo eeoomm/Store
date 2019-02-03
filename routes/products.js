@@ -9,6 +9,7 @@ router.get('/',(req, res)=>{
     }).catch(e=>res.render('error'))
 })
 
+
 //detalle
 router.get('/detail/:productId', (req,res)=>{
   Product.findById(req.params.productId)

@@ -4,12 +4,21 @@ html(lang="en")
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous")
+    link(href="/stylesheets/style.css" rel="stylesheet")
     title Document
   body
-    nav
-      a(href="/") Home | 
-      a(href="/products") Stickers | 
-      a(href="/products/new") Admin | 
-      a(href="/cart") Cart
+    nav.nav
+      .logo
+        img(width="50" heith="50" src="https://instagram.fmex10-2.fna.fbcdn.net/vp/ba8a9ef0975aee4db4f8f1e5b77064e5/5CEE8131/t51.2885-19/s150x150/17077304_1637226259918512_1029140688870047744_a.jpg?_nc_ht=instagram.fmex10-2.fna.fbcdn.net")
+      .links
+        a(href="/") Home | 
+        a(href="/products") Necklace | 
+        a(href="/products/new") Admin | 
+        a(href="/cart") Cart
+        -var items=Object.keys(cart).length
+        a(href="/cart")
+          i.fas.fa-shopping-cart.cart
+            span=items
 
     block content

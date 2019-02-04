@@ -7,7 +7,7 @@ const productSchema = new Schema({
   description:String,
   category:{
     type:String,
-    enum:['CHIDOS', 'MAS CHIDOS', 'SUPER CHIDOS']
+    enum:['Pulcera', 'Collar', 'Pulcera Aromatico', 'Collar Aromatico']
   },
   price:Number,
   inOffer:{

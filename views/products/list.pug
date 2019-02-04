@@ -1,13 +1,13 @@
 extends ../layout.pug
 
 block content
-  h1.title Stickers
+  h1.title Anhelo Locker
   section.list
     each p in products
       -var productId = p._id
       a(href="/products/detail/" + productId)
         .card
-          img(width="100" src=p.productImageURL)
+          img(width="200" src=p.productImageURL)
           strong=p.name
           form(action="/cart/add/", method="post")
             input(type="hidden", name="productId", value=productId)

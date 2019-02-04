@@ -8,7 +8,7 @@ block content
     div.description
       span.tag #{category}
       p #{description}
-      h3 $ #{price} .00MXN
+      h3 $ #{price} .00 MXN
        form(action="/cart/add/", method="post")
             input(type="hidden", name="productId", value=_id)
             input.call-to-action(type="submit", value="Agregar al carrito")

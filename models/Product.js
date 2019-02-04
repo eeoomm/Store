@@ -7,7 +7,7 @@ const productSchema = new Schema({
   description:String,
   category:{
     type:String,
-    enum:['Pulcera', 'Collar', 'Pulcera Aromatico', 'Collar Aromatico']
+    enum:['Pulsera', 'Collar', 'Pulsera Aromatico', 'Collar Aromatico']
   },
   price:Number,
   inOffer:{

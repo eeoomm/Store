@@ -57,7 +57,8 @@ a {
 .detail {
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-wrap: wrap; }
 
 .tag {
   font-size: 10px;
